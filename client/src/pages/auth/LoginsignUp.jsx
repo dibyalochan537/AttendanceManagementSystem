@@ -13,7 +13,7 @@ function LoginSignUp() {
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
   const handleLogin = async () => {
-    const response = await fetch('https://attendancemanagementsystem-ojah.onrender.com/api/login', {
+    const response = await fetch(https://attendancemanagementsystem-fawl.onrender.com/api/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, password }),
@@ -77,7 +77,7 @@ function LoginSignUp() {
       >
         {/* Login Form */}
         <div className="form-container sign-in-container">
-          <form action="https://attendancemanagementsystem-ojah.onrender.com/login" method="post">
+          <form action="https://attendancemanagementsystem-fawl.onrender.com/login" method="post">
             <h1 className="mb-4">Login</h1>
             <div className="form-group mb-3">
               <div className="input-icon">
@@ -139,7 +139,7 @@ function LoginSignUp() {
 
         {/* Register Form */}
         <div className="form-container sign-up-container">
-          <form action="/signup" method="post">
+          <form action="https://attendancemanagementsystem-fawl.onrender.com/signup" method="post">
             <h1 className="mb-4">Register</h1>
             <div className="form-group mb-3">
               <div className="input-icon">
