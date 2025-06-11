@@ -13,7 +13,7 @@ function LoginSignUp() {
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
   const handleLogin = async () => {
-    const response = await fetch(https://attendancemanagementsystem-fawl.onrender.com/api/login', {
+    const response = await fetch(const response = await fetch('https://attendancemanagementsystem-fawl.onrender.com/api/login') {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, password }),
