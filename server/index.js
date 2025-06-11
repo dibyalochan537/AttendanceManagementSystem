@@ -50,24 +50,24 @@ app.post("/login", (req, res) => {
     if(dummyAdmin.username==username){
       // const token = jwt.sign({ email: dummyAdmin.username, name:dummyAdmin.name}, SECRET_KEY, { expiresIn: '1h' });
       // res.json({ message: 'Login successful', token,dummyAdmin});
-      res.redirect("http://localhost:5173/admin/home");
+      res.redirect("https://attendance-management-system-rho-pied.vercel.app//admin/home");
     }
   }
   else if(selectDepartment=="employee"){
-    res.redirect("http://localhost:5173/emp/home");
+    res.redirect("https://attendance-management-system-rho-pied.vercel.app//emp/home");
   }
   else{
     // const hrData=dummyHrs.find(d=>d.username==username);
     // const empData=dummyEmployee.filter(d=>d.hrId==hrData.id);
     // const token = jwt.sign({ hrid:hrData.id, hrusername: hrData.username}, SECRET_KEY, { expiresIn: '1h' });
     // res.json({ message: 'Login successful', token, hrData,empData });
-    res.redirect("http://localhost:5173/hr/home");
+    res.redirect("https://attendance-management-system-rho-pied.vercel.app//hr/home");
   }
   // res.send({username,password,selectDepartment});
 });
 app.post("/signup", (req, res) => {
-  res.redirect("http://localhost:5173/")
+  res.redirect("https://attendance-management-system-rho-pied.vercel.app//")
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 10000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
