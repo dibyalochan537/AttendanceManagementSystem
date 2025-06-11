@@ -13,7 +13,7 @@ function LoginSignUp() {
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
   const handleLogin = async () => {
-    const response = await fetch('http://localhost:5000/api/login', {
+    const response = await fetch('https://attendancemanagementsystem-ojah.onrender.com/api/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, password }),
@@ -77,7 +77,7 @@ function LoginSignUp() {
       >
         {/* Login Form */}
         <div className="form-container sign-in-container">
-          <form action="http://localhost:5000/login" method="post">
+          <form action="https://attendancemanagementsystem-ojah.onrender.com/login" method="post">
             <h1 className="mb-4">Login</h1>
             <div className="form-group mb-3">
               <div className="input-icon">
