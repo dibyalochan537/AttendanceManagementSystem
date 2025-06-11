@@ -5,6 +5,7 @@
   "scripts": {
     "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+    "react-scripts": "^5.0.1"
   },
   "keywords": [],
   "author": "",
