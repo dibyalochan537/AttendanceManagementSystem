@@ -81,7 +81,7 @@ function LoginSignUp() {
       >
         {/* Login Form */}
         <div className="form-container sign-in-container">
-          <form action="https://attendancemanagementsystem-fawl.onrender.com/login" method="post">
+          <form action="https://attendancemanagementsystem-slr0.onrender.com/login" method="post">
             <h1 className="mb-4">Login</h1>
             <div className="form-group mb-3">
               <div className="input-icon">
@@ -143,7 +143,7 @@ function LoginSignUp() {
 
         {/* Register Form */}
         <div className="form-container sign-up-container">
-          <form action="https://attendancemanagementsystem-fawl.onrender.com/signup" method="post">
+          <form action="https://attendancemanagementsystem-slr0.onrender.com/signup" method="post">
             <h1 className="mb-4">Register</h1>
             <div className="form-group mb-3">
               <div className="input-icon">
