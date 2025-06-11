@@ -14,8 +14,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         {/* Admin */}
-        <Route path='/' element={<LoginSignUpPage />}/>
-        <Route path='/admin/home' element={<AdminHomePage/>}/>
+        <Route path='https://attendance-management-system-three-kappa.vercel.app//' element={<LoginSignUpPage />}/>
+        <Route path='https://attendance-management-system-three-kappa.vercel.app//admin/home' element={<AdminHomePage/>}/>
         {/* <Route path='/admin/attendance' element={<AdminHomePage />}/>
         <Route path='/admin/leave' element={<AdminHomePage />}/>
         <Route path='/admin/time' element={<AdminHomePage />}/>
@@ -23,11 +23,11 @@ function App() {
         <Route path='/leave-overtime-request' element={<LeaveOverTime />}/> */}
 
         {/* HRs */}
-        <Route path='/hr/home' element={<HrHomePage />}/>
+        <Route path='https://attendance-management-system-three-kappa.vercel.app//hr/home' element={<HrHomePage />}/>
 
 
         {/* Employeee */}
-        <Route path='/emp/home' element={<EmpHomePage />}/>
+        <Route path='https://attendance-management-system-three-kappa.vercel.app//emp/home' element={<EmpHomePage />}/>
       </Routes>
     </BrowserRouter>
   )
