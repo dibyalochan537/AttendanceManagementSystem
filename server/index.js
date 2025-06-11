@@ -50,23 +50,23 @@ app.post("/login", (req, res) => {
     if(dummyAdmin.username==username){
       // const token = jwt.sign({ email: dummyAdmin.username, name:dummyAdmin.name}, SECRET_KEY, { expiresIn: '1h' });
       // res.json({ message: 'Login successful', token,dummyAdmin});
-      res.redirect("https://attendance-management-system-rho-pied.vercel.app/admin/home");
+      res.redirect("https://attendance-management-system-sigma.vercel.app/admin/home");
     }
   }
   else if(selectDepartment=="employee"){
-    res.redirect("https://attendance-management-system-rho-pied.vercel.app/emp/home");
+    res.redirect("https://attendance-management-system-sigma.vercel.app/emp/home");
   }
   else{
     // const hrData=dummyHrs.find(d=>d.username==username);
     // const empData=dummyEmployee.filter(d=>d.hrId==hrData.id);
     // const token = jwt.sign({ hrid:hrData.id, hrusername: hrData.username}, SECRET_KEY, { expiresIn: '1h' });
     // res.json({ message: 'Login successful', token, hrData,empData });
-    res.redirect("https://attendance-management-system-rho-pied.vercel.app/hr/home");
+    res.redirect("https://attendance-management-system-sigma.vercel.app/hr/home");
   }
   // res.send({username,password,selectDepartment});
 });
 app.post("/signup", (req, res) => {
-  res.redirect("https://attendance-management-system-rho-pied.vercel.app/")
+  res.redirect("https://attendance-management-system-sigma.vercel.app/")
 });
 
 const PORT = process.env.PORT || 10000;
