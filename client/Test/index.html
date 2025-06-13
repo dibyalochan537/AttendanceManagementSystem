@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Page</title>
+</head>
+<body>
+  <script>
+    // function empDataAttendance(){
+    //   let data=[
+    //       {
+    //         id:"101",
+    //         name:"Dibyalochan",
+    //         attendance:{
+    //             "01-04-2025":"workfromhome",
+    //             "02-04-2025":"inLeave",
+    //             "03-04-2025":"present",
+    //             "04-04-2025":"overtime",
+    //             "05-04-2025":"inLeave",
+    //         }
+    //       },
+    //       {
+    //         id:"102",
+    //         name:"Dash",
+    //         attendance:{
+    //             "01-04-2025":"workfromhome",
+    //             "02-04-2025":"inLeave",
+    //             "03-04-2025":"present",
+    //             "04-04-2025":"overtime",
+    //             "05-04-2025":"inLeave",
+    //         }
+    //       },
+    //       {
+    //         id:"103",
+    //         name:"Sonu",
+    //         attendance:{
+    //             "01-04-2025":"workfromhome",
+    //             "02-04-2025":"inLeave",
+    //             "03-04-2025":"present",
+    //             "04-04-2025":"overtime",
+    //             "05-04-2025":"inLeave",
+    //         }
+    //       },
+    //       {
+    //         id:"105",
+    //         name:"Lipu",
+    //         attendance:{
+    //             "01-04-2025":"workfromhome",
+    //             "02-04-2025":"inLeave",
+    //             "03-04-2025":"present",
+    //             "04-04-2025":"overtime",
+    //             "05-04-2025":"inLeave",
+    //         }
+    //       }
+    //   ]
+    //   for(let i=0;i<data.length;i++){
+    //     for(let date in data[i].attendance){
+    //       console.log(`Id : ${data[i].id}  Name : ${data[i].name}  Status : ${data[i].attendance[date]}`)
+    //     }
+    //   }
+    // }
+
+    function getDateDay(year,month){
+    let jsonData=[];
+    let countDate=new Date(year,month,0).getDate();
+    for(let i=1;i<=countDate;i++){
+        let fullDate = new Date(`${year}-${month}-${i}`);
+        let weekday = fullDate.toLocaleString('default', { weekday: 'long' });
+        jsonData.push({i,weekday});
+    }
+    return jsonData;
+}
+  </script>
+</body>
+</html>
